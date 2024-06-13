@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #3A57E8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.header-right .dashboard-link {
+    color: #39E01C;
+}
+
+.header-right a:hover {
+    color: #ffdd57;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 20px;
+}
+
+.news-section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.news-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.news-content {
+    flex: 1;
+    position: relative;
+}
+
+.news-content h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.news-content p {
+    margin: 5px 0;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3A57E8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #2C47C6;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kategori,
+.hot-news {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.kategori h4,
+.hot-news h4 {
+    margin-top: 0;
+}
+
+.kategori ul,
+.hot-news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kategori ul li,
+.hot-news ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.kategori ul li a {
+    text-decoration: none;
+    color: #3A57E8;
+    transition: color 0.3s ease;
+}
+
+.kategori ul li a:hover {
+    color: #2C47C6;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .news-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .news-image img {
+        margin: 0 0 20px 0;
+    }
+    .news-content h3 {
+        font-size: 1.2em;
+    }
+    .read-more-btn {
+        position: static;
+        margin-top: 10px;
+    }
+}

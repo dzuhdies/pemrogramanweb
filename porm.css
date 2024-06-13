@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3A57E8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header-right .dashboard-link {
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar-container {
+    flex: 0 0 200px;
+    max-width: 150px;
+    max-height: 150px;
+    flex: 1;
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #2C47C6;
+}
+
+.account-content {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.account-content h2 {
+    margin-bottom: 20px;
+}
+
+.account-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-content form label {
+    margin-top: 10px;
+}
+
+.account-content form input,
+.account-content form select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    /* Consistent font size */
+    background-color: #fff;
+    /* Consistent background */
+    appearance: none;
+    /* Remove default styling for select elements */
+}
+
+.account-content form select:focus,
+.account-content form input:focus {
+    border-color: #3A57E8;
+    /* Highlight color on focus */
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 5px rgba(58, 87, 232, 0.5);
+    /* Subtle shadow effect */
+}
+
+.account-content form select:hover,
+.account-content form input:hover {
+    border-color: #2C47C6;
+    /* Change border color on hover */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.blue-button,
+.red-button,
+.add-article-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.blue-button {
+    background-color: #3A57E8;
+    color: white;
+}
+
+.red-button {
+    background-color: #E53E3E;
+    color: white;
+}
+
+.blue-button:hover {
+    background-color: #2C47C6;
+}
+
+.red-button:hover {
+    background-color: #C53030;
+}
+
+
+/* Tambah Artikel Button Style */
+
+.add-article-button {
+    background-color: #3A57E8;
+    /* Blue background */
+    color: white;
+    /* White text */
+}
+
+.add-article-button:hover {
+    background-color: #E53E3E;
+    /* Red background on hover */
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 15px;
+}

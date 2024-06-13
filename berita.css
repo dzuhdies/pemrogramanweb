@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3A57E8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.article-section {
+    width: 70%;
+    margin: 0 auto;
+    /* Center the article section horizontally */
+    display: flex;
+    flex-direction: column;
+    /* Use column direction to stack items vertically */
+    align-items: center;
+    /* Center items within the article section */
+}
+
+.article {
+    width: 100%;
+    /* Ensure the article takes full width of the article-section */
+    max-width: 800px;
+    /* Limit the maximum width of the article */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* Add some space below each article */
+}
+
+.article h2 {
+    margin-top: 0;
+}
+
+.article-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.article-info p {
+    margin: 0;
+    color: #666;
+}
+
+.article-image img {
+    max-width: 100%;
+    /* Ensure image does not overflow the container */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-height: 200px;
+    /* Limit the height of the image */
+    object-fit: cover;
+    /* Ensure the image maintains aspect ratio and covers the area */
+}
+
+.article-content {
+    line-height: 1.6;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.kategori h4,
+.hot-news h4 {
+    margin-top: 0;
+}
+
+.kategori ul,
+.hot-news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kategori ul li,
+.hot-news ul li {
+    margin-bottom: 10px;
+}
+
+.kategori ul li a,
+.hot-news ul li {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.kategori ul li a:hover,
+.hot-news ul li:hover {
+    color: #3A57E8;
+}
